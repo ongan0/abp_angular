@@ -1,0 +1,7 @@
+
+export interface SmartPhoneDto {
+  id?: string;
+  name?: string;
+  quantity?: number;
+  price?: number;
+}

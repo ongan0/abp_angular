@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title"> LIST</div>
+      </div>
+      <div class="card-body">
+        <!-- FORM FOR NEW TODO ITEMS -->
+        <form class="row row-cols-lg-auto g-3 align-items-center" (ngSubmit)="create()">
+          <div class="col-12">
+            <div class="input-group">
+              <input name="id" type="text" [(ngModel)]="newSmartId" hidden />
+            </div>
+            <div class="input-group">
+              <input name="name" type="text" [(ngModel)]="newSmartName" class="form-control"
+                placeholder="enter name" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="input-group">
+              <input name="quantity" type="number" [(ngModel)]="newSmartQuantity" class="form-control"
+                placeholder="enter quantity" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="input-group">
+              <input name="price" type="number" [(ngModel)]="newSmartPrice" class="form-control"
+                placeholder="enter price" />
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+        <!-- TODO ITEMS LIST -->
+        <ul id="SmartList">
+          <li *ngFor="let item of smartPhones">
+            <i class="fa fa-trash-o" (click)="delete(item.id)"></i> <i (click)="detail(item.id)">   {{item.name + ' || ' + item.quantity + ' || ' +
+              item.price }}</i>>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>

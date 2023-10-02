@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\angular",
+    "\\angular\\src",
+    "\\angular\\src\\app",
+    "\\angular\\src\\app\\home",
+    "\\aspnet-core",
+    "\\aspnet-core\\src",
+    "\\aspnet-core\\src\\TodoApp.DbMigrator",
+    "\\aspnet-core\\src\\TodoApp.HttpApi.Host"
+  ],
+  "SelectedNode": "\\aspnet-core\\src\\TodoApp.HttpApi.Host\\TodoApp.HttpApi.Host.csproj",
+  "PreviewInSolutionExplorer": false
+}
